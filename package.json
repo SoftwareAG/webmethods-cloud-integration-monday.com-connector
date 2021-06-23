@@ -1,0 +1,9 @@
+{
+  "name": "monday",
+  "version": "1.0.0",
+  "description": "monday",
+  "dependencies": {
+    "request": "2.55.0",
+    "@webmethodsio/cli-sdk": "*"
+  }
+}

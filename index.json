@@ -1,0 +1,130 @@
+{
+  "name": "Monday",
+  "description": "Node JS connector to Monday.com to fetch information via API's",
+  "triggers": [
+    "/v1/fetchboard"
+  ],
+  "icon": "monday",
+  "actions": [
+    "/v1/fetchboardviews",
+    "/v1/fetchboard",
+    "/v1/fetchgroupdetails",
+    "/v1/fetchitem",
+    "/v1/fetchactivitiesonboard",
+    "/v1/fetchitems",
+    "/v1/createboard",
+    "/v1/createitem",
+    "/v1/createupdateonitem",
+    "/v1/deleteitem"
+  ],
+  "version": 1,
+  "auth_type": "apikey",
+  "doc_link": "http://docs.example.com",
+  "appId": "d8d06bac-d13f-4924-9046-6d2bd73b2797",
+  "guid": "3d89fc80-510f-46f2-a0f3-469e360d50e3",
+  "connectionUid": "monday_1606375733184",
+  "lookup": true,
+  "lookup_attachments": [
+    {
+      "lookup_id": "fetchboards",
+      "action_id": "/v1/fetchboard",
+      "field_id": "boardID",
+      "dependencies": []
+    },
+    {
+      "lookup_id": "boardkind",
+      "action_id": "/v1/createboard",
+      "field_id": "boardKind",
+      "dependencies": []
+    },
+    {
+      "lookup_id": "fetchboards",
+      "action_id": "/v1/createitem",
+      "field_id": "boardID",
+      "dependencies": []
+    },
+    {
+      "lookup_id": "fetchgroups",
+      "action_id": "/v1/createitem",
+      "field_id": "groupID",
+      "dependencies": [
+        "boardID"
+      ]
+    },
+    {
+      "lookup_id": "fetchgroups",
+      "action_id": "/v1/fetchgroupdetails",
+      "field_id": "groupID",
+      "dependencies": [
+        "boardID"
+      ]
+    },
+    {
+      "lookup_id": "fetchgroups",
+      "action_id": "/v1/fetchitem",
+      "field_id": "groupID",
+      "dependencies": [
+        "boardID"
+      ]
+    },
+    {
+      "lookup_id": "fetchgroups",
+      "action_id": "/v1/fetchItems",
+      "field_id": "groupID",
+      "dependencies": [
+        "boardID"
+      ]
+    },
+    {
+      "lookup_id": "fetchgroups",
+      "action_id": "/v1/fetchitems",
+      "field_id": "groupID",
+      "dependencies": [
+        "boardID"
+      ]
+    },
+    {
+      "lookup_id": "fetchitemspergroup",
+      "action_id": "/v1/createupdateonitem",
+      "field_id": "itemID",
+      "dependencies": [
+        "boardID",
+        "groupID"
+      ]
+    },
+    {
+      "lookup_id": "fetchgroups",
+      "action_id": "/v1/createupdateonitem",
+      "field_id": "groupID",
+      "dependencies": [
+        "boardID"
+      ]
+    },
+    {
+      "lookup_id": "fetchgroups",
+      "action_id": "/v1/deleteitem",
+      "field_id": "groupID",
+      "dependencies": [
+        "boardID"
+      ]
+    },
+    {
+      "lookup_id": "fetchitemspergroup",
+      "action_id": "/v1/deleteitem",
+      "field_id": "itemID",
+      "dependencies": [
+        "boardID",
+        "groupID"
+      ]
+    },
+    {
+      "lookup_id": "fetchitemspergroup",
+      "action_id": "/v1/fetchitem",
+      "field_id": "itemID",
+      "dependencies": [
+        "boardID",
+        "groupID"
+      ]
+    }
+  ]
+}
