@@ -211,3 +211,8 @@
 <p style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-top:0cm;margin-bottom:8.0pt;line-height:107%;'><span style="font-size:16px;line-height:107%;">Once data from Monday.com is stored in google drive, it can be further utilized for backup, analytics and much more.</span></p>
 <p style='margin-right:0cm;margin-left:0cm;font-size:15px;font-family:"Calibri",sans-serif;margin-top:0cm;margin-bottom:8.0pt;line-height:107%;'><span style="font-size:16px;line-height:107%;">&nbsp;</span></p>
 <p style='margin-right:0cm;margin-left:72.0pt;font-size:15px;font-family:"Calibri",sans-serif;margin-top:0cm;margin-bottom:5.0pt;line-height:21.0pt;background:white;'><span style='font-family:"Calibri",sans-serif;color:black;'>&nbsp;</span></p>
+
+______________________
+These tools are provided as-is and without warranty or support. They do not constitute part of the Software AG product suite. Users are free to use, fork and modify them, subject to the license agreement. While Software AG welcomes contributions, we cannot guarantee to include every contribution in the master project.
+
+Contact us at [TECHcommunity](mailto:technologycommunity@softwareag.com?subject=Github/SoftwareAG) if you have any questions.
